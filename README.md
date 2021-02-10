@@ -1,3 +1,5 @@
+# Test API
+
 ## Prerequisites
 - [Install Node](https://nodejs.org/en/)
 - [Install npm](https://www.npmjs.com/get-npm)
@@ -10,7 +12,10 @@
 ## Run tests
 
 ```bash
+# Install dependencies 
+npm install
 
+# Run tests
 npm test
 
 ```

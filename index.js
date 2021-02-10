@@ -36,6 +36,22 @@ class ApiHelper {
 
         return res;
     }
+
+    async deleteDictionary(id) {
+        try {
+            const res = await this.http.delete(
+                'https://'+this.hostname+'/dictionary/'+id,
+                {
+                    reponseType: 'json',
+                }
+            )
+    
+            return res;
+        } catch (error) {
+            return error;
+        }
+        
+    }
 }
   
 module.exports = ApiHelper;
